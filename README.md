@@ -6,6 +6,7 @@ This is a simple Docker Image for running "Vintage Story" dedicated server.
 ## Howto build image
 
 Very easy usage, you **can** define version via parameter. If not set, default (1.14.10) value will be used!
+Additional parameters can be appended and will be passed to docker build.
 
 **default version**
 ```
@@ -15,7 +16,7 @@ Very easy usage, you **can** define version via parameter. If not set, default (
 **specific version**
 
 ```
-./build.sh 1.14.9
+VS_VERSION=1.14.9 ./build.sh [--network host]
 ```
 
 ## Parameters
